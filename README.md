@@ -25,6 +25,9 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 For any questions, suggestions, or feedback, please reach out to us at:
 
 **Email**: kunalcoder45@gmail.com
+
 **My portfolio**: https://kunalsharma45portfolio.netlify.app
+
 **CSE Partner website link** https://csepartner.netlify.app
+
 **Thank you for using CSE Partner!** We hope this project helps you in your studies and contributes to your success in the field of Computer Science Engineering. Happy learning!
