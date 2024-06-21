@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Partner</title>
+    <link rel="shortcut icon" href="./assests/favicon.png" type="image/x-icon">
+    <!-- own css file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css'>
+</head>
+<body>
+<!-- loader -->
+    
+
+<div id="loader">
+        <h1>Resources</h1>
+        <h1>Notes</h1>
+        <h1>CSE</h1>
+        <script>
+
+function loaderAnimation() {
+var loader = document.querySelector("#loader")
+setTimeout(function () {
+loader.style.top = "-100%"
+}, 4200)
+}
+loaderAnimation()
+const navBar = document.querySelector("nav"),
+
+        menuBtns = document.querySelectorAll(".menu-icon"),
+
+        overlay = document.querySelector(".overlay");
+
+      menuBtns.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navBar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+      })
+;
+        </script>
+</div>
+
+<!-- end loader -->
+
+<!-- nav bar -->
+<div class="main_dropdown_container">
+    <div class="dropdown_logo_bar_li" onclick="toggle_bar()" id="toggle_bar" >
+        <i class="fas fa-bars dropdown_logo_bar bar " ></i>
+    </div>
+    <nav class="navbar_container toggle">
+            <div class="main_navbar">
+                <ul class="main_navbar_ul">
+                    <li class="navbar_level_1_li"><a href="#" class="navbar_level_1_link">Home</a></li>
+                    <li class="navbar_level_1_li"><a href="about.html" class="navbar_level_1_link">About</a></li>
+                    <li class="navbar_level_1_li">
+                                        Resources  
+                                    <div class="mega_dropdown_container">
+                                        <div class="row row1">
+                                            <h2 class="mega_header"></h2>
+                                            <ul class="mega_ul" id="first_ul">
+                                                <li class="mega_li"><a href="#" class="mega_links">Computer Science Engineering</a></li>
+                                                <li class="mega_li"><a href="#" class="mega_links">Electrical Engineering</a></li>
+                                                <li class="mega_li"><a href="#" class="mega_links">Mechnical Engineering</a></li>
+                                                <li class="mega_li"><a href="#" class="mega_links">Civil Engineering</a></li>
+                                                <li class="mega_li"><a href="#" class="mega_links">Architecture Engineering</a></li>
+                                                <li class="mega_li"><a href="resources.html" class="mega_links">All Resources</a></li>
+                                            </ul>
+                                        </div>        
+                                        <div class="row row2">
+                    </li>
+                    <li class="navbar_level_1_li"><a href="contact.html" class="navbar_level_1_link">Contact</a></li>
+                </ul>
+            </div>
+    </nav>
+</div>
+<!-- end nav bar -->
+
+<!-- hero section -->
+<div class="hero">
+    <div class="box1">
+        <h1>I'm <span class="auto-input"></span></h1>
+        <p>Welcome to CSE Partner! Your go-to source for high-quality Computer Science and Engineering notes. Whether you're studying for exams, tackling assignments, or expanding your knowledge, we provide expertly curated materials to help you succeed. Join us and enhance your learning journey with top-notch resources at your fingertips.</p>
+    </div>
+    <div class="box2">
+        <img src="./assests/hero.svg" alt="">
+    </div>
+</div><hr>
+<!-- hero section end -->
+
+<!-- Resources section -->
+
+<section class="services" id="services">
+    <h2 class="heading">Recommended  <span class="txt-col">Resources</span></h2>
+    <div class="services-container">
+        <div class="services-box">
+            <h3>Web Development</h3>
+            <!-- The slider container -->
+            <div class="slider">
+                <!-- The slider images -->
+                <div class="slide">
+                <img src="./assests/img.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                <img src="./assests/img2.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                <img src="./assests/img3.jpg" alt="Image 3">
+                </div>
+                <!-- The slider navigation -->
+                <div class="nav">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+                </div>
+            </div>
+            <a href="#" class="btn">Download</a>
+        </div>
+        <div class="services-box">
+            <h3>Graphic Design</h3>
+            <!-- The slider container -->
+            <div class="slider">
+                <!-- The slider images -->
+                <div class="slide">
+                <img src="./assests/img.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                <img src="./assests/img2.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                <img src="./assests/img3.jpg" alt="Image 3">
+                </div>
+                <!-- The slider navigation -->
+                <div class="nav">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+                </div>
+            </div>
+            <a href="#" class="btn">Download</a>
+        </div>
+        <div class="services-box">
+            <h3>Digital Marketing</h3>
+            <!-- The slider container -->
+            <div class="slider">
+                <!-- The slider images -->
+                <div class="slide">
+                <img src="./assests/img.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                <img src="./assests/img2.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                <img src="./assests/img3.jpg" alt="Image 3">
+                </div>
+                <!-- The slider navigation -->
+                <div class="nav">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+                </div>
+            </div>
+            <a href="#" class="btn">Download</a>
+        </div>
+        <div class="services-box">
+            <h3>DSA</h3>
+            <!-- The slider container -->
+            <div class="slider">
+                <!-- The slider images -->
+                <div class="slide">
+                <img src="./assests/img.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                <img src="./assests/img2.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                <img src="./assests/img3.jpg" alt="Image 3">
+                </div>
+                <!-- The slider navigation -->
+                <div class="nav">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+                </div>
+            </div>
+            <a href="#" class="btn">Download</a>
+        </div>
+        <div class="services-box">
+            <h3>DBMs</h3>
+            <!-- The slider container -->
+            <div class="slider">
+                <!-- The slider images -->
+                <div class="slide">
+                <img src="./assests/img.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                <img src="./assests/img2.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                <img src="./assests/img3.jpg" alt="Image 3">
+                </div>
+                <!-- The slider navigation -->
+                <div class="nav">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+                </div>
+            </div>
+            <a href="#" class="btn">Download</a>
+        </div>
+        <div class="services-box">
+            <h3>OOPs</h3>
+            <!-- The slider container -->
+            <div class="slider">
+                <!-- The slider images -->
+                <div class="slide">
+                <img src="./assests/img.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                <img src="./assests/img2.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                <img src="./assests/img3.jpg" alt="Image 3">
+                </div>
+                <!-- The slider navigation -->
+                <div class="nav">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+                </div>
+            </div>
+            <a href="#" class="btn">Download</a>
+        </div>
+    </div>
+</section> <hr>
+<!--End ofs Resources section -->
+
+<!-- developer section -->
+<div class="head">
+    <h2>Developer</h2>
+<div class="dev-main">
+    <div class="box3">
+        <img src="./assests/illustration.png" alt="illustration-img">
+    </div>
+    <div class="box4">
+        <img src="./assests/profile-pic.png" alt="developer-img">
+        <h2>I'm <span class="auto-input2"></span></h2>
+        <p>Welcome to CSE Partner! I'm [Your Name], a passionate coder with a deep love for programming and a dedication to helping fellow CSE students succeed. At CSE Partner, I provide expertly curated notes covering a wide range of Computer Science and Engineering topics. Whether you're preparing for exams, working on assignments, or simply eager to learn more, you'll find the resources you need here. Join me on this journey and enhance your learning experience with high-quality.</p>
+        <center>
+            <div class="social">
+                <a href=""><i class="fi fi-brands-instagram" id="icon"></i></a>
+                <a href="https://github.com/kunalcoder45"><i class="fi fi-brands-github" id="icon"></i></a>
+                <a href=""><i class="fi fi-brands-linkedin" id="icon"></i></a>
+            </div>
+            <a href="https://kunalsharma45portfolio.netlify.app" class="butt">Portfolio</a>
+        </center>
+    </div>
+</div>
+</div>
+
+<!-- dev-section-end -->
+<!-- footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <a href="#"><img src="./assests/cse.png" alt="logo-img"></a>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">THEME TWEAK</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li><a href="#">SHOWCASE</a></li>
+                <li><a href="#">WIDGETKIT</a></li>
+                <li><a href="#">SUPPORT</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">AFFILIATES</a></li>
+                <li><a href="#">RESOURCES</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<!-- top to bottom  -->
+<a href="#">
+    <button class="button">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z "
+          ></path>
+        </svg>
+      </button>
+</a>
+<!-- end top to bottom    -->
+
+    <div class="footer-bottom">
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-rss"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-flickr"></i></a>
+        </div>
+        <p>&copy; Copyright. All rights reserved. | Developed By <a href="https://kunalsharma45portfolio.netlify.app" class="kunal">Kunal Sharma</a></p>
+    </div>
+</footer>
+<!-- end footer -->
+
+
+
+
+
+
+<!-- script files -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
